@@ -9,7 +9,6 @@
   </head>
   <body>
     <header>
-      <section>
         <h1>ENI - MEMORY - Accueil</h1>
         <nav>
           <ul class="menu">
@@ -20,8 +19,77 @@
             <a href="game.html"><li>Jouer</li></a>
           </ul>
         </nav>
-      </section>
     </header>
-    <main></main>
+    <main>
+      <section class="fieldsed">
+        <h2>Inscrivez vous</h2>
+        <fieldset>
+          <legend>Inscription</legend>
+          <form action="" method="post">
+            <div class="champs">
+              <label for="nom">Nom d'utilisateur</label>
+              <input
+                type="text"
+                id="nom"
+                name="nom"
+                autofocus
+                required
+                placeholder="3 caractères minimum"
+                pattern="[A-Za-z0-9]{3,}"
+              />
+              <br><br>
+              <label for="Email">Entrez votre email</label>
+              <input
+                type="email"
+                name="email"
+                id="mail"
+                required
+                placeholder="Votre email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              />
+              <br><br>
+              <label for="password">Mot de passe</label>
+              <input 
+                type="password"
+                name="password"
+                id="password"
+                required
+                placeholder="Votre mot de passe"
+                pattern="(?=.*\d)[A-Za-z!@#\$%\^\&*_=+-].{6,}"
+              />
+              <br>
+              <span>Au moins un symbole, un chiffre, ainsi que 6 caractères minimum.</span>
+              <br><br>
+              <label for="password2">Confirmez le mot de passe</label>
+              <input 
+                type="password"
+                name="password"
+                id="password"
+                required
+                placeholder="Confirmez le mot de passe"
+                pattern="(?=.*\d)[A-Za-z!@#\$%\^\&*_=+-].{6,}"
+              />
+            </div>
+            <br>
+            <div class="boutons">
+               <label for="valider"></label>
+              <input
+                type="submit"
+                id="valider"
+                name="valider"
+                value="Création du compte"
+              />
+              <label for="annuler"></label>
+              <input
+                type="reset"
+                id="annuler"
+                name="annuler"
+                value="Annuler"
+              />
+            </div>
+          </form>
+        </fieldset>
+      </section>
+    </main>
   </body>
 </html>
