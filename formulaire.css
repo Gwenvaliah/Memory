@@ -1,0 +1,43 @@
+fieldset {
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.champs {
+  display: flex;
+  flex-direction: column;
+}
+
+.champs input {
+  background-color: rgb(20, 78, 69);
+  padding: 7px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid white;
+}
+
+.champs label {
+  padding: 5px;
+}
+
+::placeholder {
+  color: rgb(180, 180, 180);
+  font-size: larger;
+}
+
+.boutons {
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 5px;
+}
+
+#valider,
+#annuler {
+  padding: 7px;
+}

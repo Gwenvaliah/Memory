@@ -1,0 +1,23 @@
+.regle {
+  margin: 0px 0px 0px 25px;
+}
+
+img {
+  display: block;
+  width: 30vw;
+  margin: auto;
+  padding: 10px;
+}
+
+ul {
+  padding: 0;
+  margin: 20px;
+}
+
+.boxtext {
+  margin: 10px;
+}
+
+h2 {
+  margin: 0px 0px 0px 10px;
+}
