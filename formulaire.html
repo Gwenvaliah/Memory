@@ -5,26 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ENI - Memory</title>
     <link rel="stylesheet" href="style.css" />
-    <script type="module" src="/js/index.js"></script>
+    <link rel="stylesheet" href="formulaire.css" />
   </head>
   <body>
     <header>
-        <h1>ENI - MEMORY - Accueil</h1>
-        <nav>
-          <ul class="menu">
-            <a href="index.html"><li>Accueil</li></a>
-            <a href="formulaire.html"><li>S'inscrire</li></a>
-            <a href="connexion.html"><li>Se connecter</li></a>
-            <a href="profil.html"><li>Profil</li></a>
-            <a href="game.html"><li>Jouer</li></a>
-          </ul>
-        </nav>
+      <h1>ENI - MEMORY - Accueil</h1>
+      <nav>
+        <ul class="menu">
+          <a href="index.html"><li>Accueil</li></a>
+          <a href="formulaire.html"><li>S'inscrire</li></a>
+          <a href="connexion.html"><li>Se connecter</li></a>
+          <a href="profil.html"><li>Profil</li></a>
+          <a href="game.html"><li>Jouer</li></a>
+        </ul>
+      </nav>
     </header>
     <main>
-      <section class="fieldsed">
+      <section>
         <h2>Inscrivez vous</h2>
         <fieldset>
-          <legend>Inscription</legend>
+          <legend>Formulaire</legend>
           <form action="" method="post">
             <div class="champs">
               <label for="nom">Nom d'utilisateur</label>
@@ -35,9 +35,9 @@
                 autofocus
                 required
                 placeholder="3 caractères minimum"
-                pattern="[A-Za-z0-9]{3,}"
               />
-              <br><br>
+              <span class="nomVide"></span>
+              <br />
               <label for="Email">Entrez votre email</label>
               <input
                 type="email"
@@ -47,9 +47,9 @@
                 placeholder="Votre email"
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
               />
-              <br><br>
+              <br />
               <label for="password">Mot de passe</label>
-              <input 
+              <input
                 type="password"
                 name="password"
                 id="password"
@@ -57,11 +57,13 @@
                 placeholder="Votre mot de passe"
                 pattern="(?=.*\d)[A-Za-z!@#\$%\^\&*_=+-].{6,}"
               />
-              <br>
-              <span>Au moins un symbole, un chiffre, ainsi que 6 caractères minimum.</span>
-              <br><br>
+              <span
+                >Au moins un symbole, un chiffre, ainsi que 6 caractères
+                minimum.</span
+              >
+              <br />
               <label for="password2">Confirmez le mot de passe</label>
-              <input 
+              <input
                 type="password"
                 name="password"
                 id="password"
@@ -70,9 +72,9 @@
                 pattern="(?=.*\d)[A-Za-z!@#\$%\^\&*_=+-].{6,}"
               />
             </div>
-            <br>
+            <br />
             <div class="boutons">
-               <label for="valider"></label>
+              <label for="valider"></label>
               <input
                 type="submit"
                 id="valider"
@@ -80,16 +82,13 @@
                 value="Création du compte"
               />
               <label for="annuler"></label>
-              <input
-                type="reset"
-                id="annuler"
-                name="annuler"
-                value="Annuler"
-              />
+              <input type="reset" id="annuler" name="annuler" value="Annuler" />
             </div>
           </form>
         </fieldset>
       </section>
     </main>
+    <script type="module" src="js/index.js"></script>
+    <script type="module" src="js/formulaire.js"></script>
   </body>
 </html>
