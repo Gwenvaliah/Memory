@@ -41,31 +41,3 @@ h2 {
 #annuler {
   padding: 7px;
 }
-
-.forceMdp {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  text-align: center;
-}
-
-.fai {
-  height: 20px;
-  width: 100px;
-  margin: 5px;
-  border-top: solid 3px orange;
-}
-
-.moy {
-  border-top: solid 3px yellow;
-  height: 20px;
-  width: 100px;
-  margin: 5px;
-}
-
-.for {
-  border-top: solid 3px green;
-  height: 20px;
-  width: 100px;
-  margin: 5px;
-}

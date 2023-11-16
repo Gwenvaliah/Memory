@@ -25,7 +25,7 @@
         <h2>Inscrivez vous</h2>
         <fieldset>
           <legend>Formulaire</legend>
-          <form action="" method="post">
+          <form id="formulaire" action="" method="post">
             <div class="champs">
               <label for="nom">Nom d'utilisateur</label>
               <input
@@ -36,41 +36,43 @@
                 required
                 placeholder="3 caractères minimum"
               />
-              <span class="nomVide"></span>
+              <span class="errorNom"></span>
               <br />
-              <label for="Email">Entrez votre email</label>
+              <label for="mail">Entrez votre email</label>
               <input
                 type="email"
                 name="email"
                 id="mail"
-                required
                 placeholder="Votre email"
-                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                required
               />
+              <span class="errorMail"></span>
               <br />
               <label for="password">Mot de passe</label>
               <input
                 type="password"
                 name="password"
                 id="password"
-                required
                 placeholder="Votre mot de passe"
-                pattern="(?=.*\d)[A-Za-z!@#\$%\^\&*_=+-].{6,}"
               />
               <span
                 >Au moins un symbole, un chiffre, ainsi que 6 caractères
                 minimum.</span
               >
+              <div class="forceMdp">
+                <div class="faible"></div>
+                <div class="moyen"></div>
+                <div class="fort"></div>
+              </div>
               <br />
               <label for="password2">Confirmez le mot de passe</label>
               <input
                 type="password"
-                name="password"
-                id="password"
-                required
+                name="password2"
+                id="password2"
                 placeholder="Confirmez le mot de passe"
-                pattern="(?=.*\d)[A-Za-z!@#\$%\^\&*_=+-].{6,}"
               />
+              <span class="errorMdp"></span>
             </div>
             <br />
             <div class="boutons">

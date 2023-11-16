@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ENI - Memory</title>
     <link rel="stylesheet" href="style.css" />
-    <script type="module" src="/js/index.js"></script>
+    <link rel="stylesheet" href="connexion.css">
+
   </head>
   <body>
     <header>
@@ -20,6 +21,45 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section>
+        <h2>Connectez vous</h2>
+        <fieldset>
+          <legend>Connexion utilisateur</legend>
+          <form id="connexion" action="" method="post">
+            <div class="champs">
+              <label for="mail">Entrez votre email</label>
+              <input
+                type="email"
+                name="email"
+                id="mail"
+                placeholder="Votre email"
+                required
+              />
+              <br />
+              <label for="password">Mot de passe</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Votre mot de passe"
+              />
+            </div>
+            <br />
+            <div class="boutons">
+              <label for="valider"></label>
+              <input
+                type="submit"
+                id="valider"
+                name="valider"
+                value="Se connecter"
+              />
+              <label for="annuler"></label>
+              <input type="reset" id="annuler" name="annuler" value="Annuler" />
+            </div>
+          </form>
+        </fieldset>
+      </section>
+    </main>
   </body>
 </html>
